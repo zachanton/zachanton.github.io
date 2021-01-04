@@ -10,8 +10,8 @@ layout: feed
 	<updated>{{ site.time | date_to_xmlschema }}</updated>
 	<id>http://zachanton.github.io/blog</id>
 	<author>
-		<name>Brendan Hasz</name>
-		<email>winsto99@gmail.com</email>
+		<name>Anton Zakharenkov</name>
+		<email>anton.zaharenkov@phystech.edu</email>
 	</author>
 
 	{% for post in site.posts %}
