@@ -82,8 +82,8 @@ A map \\(F:\mathbb{R}^d\to\mathbb{R}^p:\boldsymbol{x}\mapsto(f_1(\boldsymbol{x})
 There are two levels of equivalence
 between tropical polynomials
 
-- \\(f =_1 g\\): \\\;(f\\) and \\(g\\) have the same terms and coefficients;
-- \\(f =_2 g\\): \\\;(f(x) = g(x)\\) for all \\(x \in R\\)
+- \\(f =_1 g:\; f and g\\) have the same terms and coefficients;
+- \\(f =_2 g:\; f(x) = g(x)\\) for all \\(x \in R\\)
 
 For example, the polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = max \left( x_1+x_2, 2 x_1, 2 x_2\right)\\) and \\(x_1^{2} \oplus x_2^{2}= max \left(2 x_1, 2 x_2\right)\\) are functionally equivalent, but not equal as polynomials. 
 
