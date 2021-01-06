@@ -35,7 +35,7 @@ trained for a binary classification problem.
 ### Tropical Semiring
 
 On the set \\(\mathbb{R} = R\cup\{-\infty \}\\) we define two commutative binary
-operations \\(\oplus\\) and \\(\odot\\) as follows: for \\(a, b\in \R\\) and
+operations \\(\oplus\\) and \\(\odot\\) as follows: for \\(a, b\in R\\) and
 \\(c\in \mathbb{R}\\)
 
 $$
@@ -46,7 +46,7 @@ $$
 c\oplus -\infty = c,\, c\odot -\infty = -\infty
 $$
 
-The triplet \\(\mathbb{T} = { \mathbb{R}\cup\{-\infty }, \oplus, \odot \}\\) is called the tropical
+The triplet \\(\mathbb{T} = {\mathbb{R}, \oplus, \odot}\\) is called the tropical
 semiring.
 
 Also we define *tropical quotient* of \\(x\\) and \\(y\\) as
