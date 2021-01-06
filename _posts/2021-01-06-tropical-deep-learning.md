@@ -55,20 +55,21 @@ Also we define *tropical quotient* of \\(x\\) and \\(y\\) as
 
 ### Tropical Polynomial
 
-Let *x*<sub>1</sub>, …, *x*<sub>*d*</sub> be variables representing
-elements of $\\T$. A *tropical monomial* is a finite product of any of
-these variables, with repetition allowed
-*c* ⊙ *x*<sub>1</sub><sup> ⊙ *α*<sub>1</sub></sup> ⊙ … ⊙ *x*<sub>*d*</sub><sup> ⊙ *α*<sub>*d*</sub></sup> = *c* + *α*<sub>1</sub>*x*<sub>1</sub> + … + *α*<sub>*d*</sub>*x*<sub>*d*</sub>
+Let \\(x_1,\dots,x_d\\) be variables representing elements of \\(\mathbb{T}\\). A *tropical monomial* is a finite product of any of these variables, with repetition allowed
+
+$$
+c \odot x_1^{\odot \alpha_1}\odot \dots \odot x_d^{\odot \alpha_d} = c + \alpha_1 x_1 + \dots + \alpha_d x_d
+$$
 
 A *tropical polynomial* is a finite sum of tropical monomials:
-$$\\begin{split}
-                {}& c\_1 \\x^{\\alpha\_1} \\oplus\\dots\\oplus c\_n \\x^{\\alpha\_n} = max(c\_1+\\langle \\alpha\_1,\\x \\rangle,\\dots,c\_n+\\langle \\alpha\_n,\\x \\rangle)
-            \\end{split}$$
-with $c\_i\\in\\T$ and
-$\\boldsymbol{\\alpha}\_i \\coloneqq (\\alpha\_{i1},\\dots,\\alpha\_{id})\\in\\Z^d$
-and a monomial of a given multiindex appears at most once in the sum,
-i.e., *α*<sub>*i*</sub> ≠ *α*<sub>*j*</sub> for any *i* ≠ *j*.
 
+$$
+{}& c_1 \x^{\alpha_1} \oplus\dots\oplus c_n \x^{\alpha_n} = max(c_1+\langle \alpha_1,\x \rangle,\dots,c_n+\langle \alpha_n,\x \rangle)
+$$
+
+with \\(c_i\in\T\\) and \\(\boldsymbol{\alpha}_i = (\alpha_{i1},\dots,\alpha_{id})\in\Z^d\\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
+        
+        
 ### Tropical Rational Map
 
 A tropical quotient of two tropical polynomials $f(\\x) \\oslash g(\\x)$
