@@ -75,25 +75,18 @@ with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_1,\dots,\alph
 A tropical quotient of two tropical polynomials \\(f(\\boldsymbol{x}) \\oslash g(\\boldsymbol{x})\\)
 is a tropical rational function.
 
-A map \\(F:\R^d\to\R^p:\boldsymbol{x}\mapsto(f_1(\boldsymbol{x}),\dots,f_p(\boldsymbol{x}))\\) is a *tropical polynomial map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical polynomial and a *tropical rational map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical rational function.
+A map \\(F:\mathbb{R}^d\to\mathbb{R}^p:\boldsymbol{x}\mapsto(f_1(\boldsymbol{x}),\dots,f_p(\boldsymbol{x}))\\) is a *tropical polynomial map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical polynomial and a *tropical rational map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical rational function.
 
 
 ###Equivalence of tropical polynomials
- There are two levels of equivalence
+
+There are two levels of equivalence
 between tropical polynomials
 
--   *f*=<sub>1</sub>*g*: *f* and *g* have the same terms and
-    coefficients;
+- \item \\(f =_1 g\\): \\(f\\) and \\(g\\) have the same terms and coefficients;
+- \item \\(f =_2 g\\): \\(f(x) = g(x)\\) for all \\(x \in R\\)
 
--   *f*=<sub>2</sub>*g*: *f*(*x*) = *g*(*x*) for all *x* ∈ *R*
-
-The polynomials
-*x*<sub>1</sub> ⊙ *x*<sub>2</sub> ⊕ *x*<sub>1</sub><sup>2</sup> ⊕ *x*<sub>2</sub><sup>2</sup> = *m**a**x*(*x*<sub>1</sub>+*x*<sub>2</sub>,2*x*<sub>1</sub>,2*x*<sub>2</sub>)
-and
-*x*<sub>1</sub><sup>2</sup> ⊕ *x*<sub>2</sub><sup>2</sup> = *m**a**x*(2*x*<sub>1</sub>,2*x*<sub>2</sub>)
-are functionally equivalent, but not equal as polynomials.
-
-
+The polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = max \left( x_1+x_2, 2 x_1, 2 x_2\right)\\) and \\(x_1^{2} \oplus x_2^{2}= max \left(2 x_1, 2 x_2\right)\\) are functionally equivalent, but not equal as polynomials.
 
 
 
