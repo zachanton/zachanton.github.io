@@ -46,14 +46,14 @@ $$
 c\oplus -\infty = c,\, c\odot -\infty = -\infty
 $$
 
-The triplet \\(\mathbb{T} = \{\mathbb{R}, \oplus, \odot\}\\) is called the tropical
+The triplet \\(\mathbb{T} = \lbrace\mathbb{R}, \oplus, \odot\rbrace\\) is called the tropical
 semiring.
 
 Also we define *tropical quotient* of \\(x\\) and \\(y\\) as
 \\(x \oslash y = x-y\\) and *tropical power* as
 \\(x^{\odot a} = a \cdot x\\) for \\(a\in \mathbb{R}\\)
 
-### NEW
+### NEW2
 ### Tropical Polynomial
 
 Let *x*<sub>1</sub>, …, *x*<sub>*d*</sub> be variables representing
