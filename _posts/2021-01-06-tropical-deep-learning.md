@@ -67,7 +67,7 @@ $$
 c_1 \boldsymbol{x}^{\alpha_1} \oplus\dots\oplus c_n \boldsymbol{x}^{\alpha_n} = max(c_1+\langle \alpha_1,\boldsymbol{x} \rangle,\dots,c_n+\langle \alpha_n,\boldsymbol{x} \rangle)
 $$
 
-with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_{i1},\dots,\alpha_{id})\in\Z^d\\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
+with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_1,\dots,\alpha_d) \in\Z^d \\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
         
         
 ### Tropical Rational Map
