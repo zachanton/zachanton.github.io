@@ -36,19 +36,22 @@ trained for a binary classification problem.
 
 On the set \\(\mathbb{R}\cup\{-\infty \}\\) we define two commutative binary
 operations \\(\oplus\\) and \\(\odot\\) as follows: for \\(a, b\in \mathbb{R}\\) and
-\\(c\in \mathbb{R}\\), 
+\\(c\in \mathbb{R}\\)
+
 $$
 a\oplus b = max(a, b), a\odot b = a + b
 $$
+
 $$
 c\oplus -\infty = c, c\odot -\infty = -\infty
 $$
+
 The triplet \\(\mathbb{T} = \{\mathbb{R}\cup\{-\infty \}, \oplus, \odot\}\\) is called the tropical
 semiring.
 
 Also we define *tropical quotient* of \\(x\\) and \\(y\\) as
-\\(x \oslash y\coloneqq x-y\\) and *tropical power* as
-\\(x^{\odot a} \coloneqq a \cdot x\\) for \\(a\in \mathbb{R}\\)
+\\(x \oslash y = x-y\\) and *tropical power* as
+\\(x^{\odot a} = a \cdot x\\) for \\(a\in \mathbb{R}\\)
 
 ### Tropical Polynomial
 
