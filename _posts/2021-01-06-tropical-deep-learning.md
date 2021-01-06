@@ -1,10 +1,28 @@
+<style TYPE="text/css">
+code.has-jax {font: inherit; font-size: 100%; background: inherit; border: inherit;}
+</style>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'] // removed 'code' entry
+    }
+});
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS_HTML-full"></script>
+
 ---
 layout: post
 title: "Tropical Geometry of Deep Neural Networks"
 date: 2021-01-06
 description: "Training gradient boosted decision trees with a quantile loss to predict taxi fares, in python using catboost and vaex."
 img_url: /assets/img/tropical-deep-learning/new-boundaries.png
-github_url: https://github.com/zachanton/tropical
 tags: [deep learning, tropical geometry,visualization]
 language: [python]
 comments: true
@@ -35,16 +53,16 @@ trained for a binary classification problem.
 
 ### Tropical Semiring
 
-On the set $\\{\\R\\cup\\{-\\infty \\}$ we define two commutative binary
-operations ⊕ and ⊙ as follows: for *a*, *b* ∈ *R* and $c\\in \\R$,
-*a* ⊕ *b* = *m**a**x*(*a*, *b*), *a* ⊙ *b* = *a* + *b*
-*c* ⊕  − ∞ = *c*, *c* ⊙  − ∞ =  − ∞
-The triplet $\\T = \\{\\R\\cup\\{-\\infty \\}, \\oplus, \\odot\\}$ is
-called the tropical semiring
+On the set $\{\R\cup\{-\infty \}$ we define two commutative binary
+operations $\oplus$ and $\odot$ as follows: for $a, b\in R$ and
+$c\in \R$, $$a\oplus b = max(a, b), a\odot b = a + b$$
+$$c\oplus -\infty = c, c\odot -\infty = -\infty$$ The triplet
+$\T = \{\R\cup\{-\infty \}, \oplus, \odot\}$ is called the tropical
+semiring
 
-Also we define *tropical quotient* of *x* and *y* as
-*x* ⊘ *y* ≔ *x* − *y* and *tropical power* as
-*x*<sup> ⊙ *a*</sup> ≔ *a* ⋅ *x* for $a\\in\\R$
+Also we define *tropical quotient* of $x$ and $y$ as
+$x \oslash y\coloneqq x-y$ and *tropical power* as
+$x^{\odot a} \coloneqq a \cdot x$ for $a\in\R$
 
 ### Tropical Polynomial
 
