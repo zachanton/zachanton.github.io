@@ -39,11 +39,11 @@ operations \\(\oplus\\) and \\(\odot\\) as follows: for \\(a, b\in R\\) and
 \\(c\in \mathbb{R}\\)
 
 $$
-a\oplus b = max(a, b),\, a\odot b = a + b
+a\oplus b = max(a, b),\; a\odot b = a + b
 $$
 
 $$
-c\oplus -\infty = c,\, c\odot -\infty = -\infty
+c\oplus -\infty = c,\; c\odot -\infty = -\infty
 $$
 
 The triplet \\(\mathbb{T} = \lbrace\mathbb{R}, \oplus, \odot\rbrace\\) is called the tropical
