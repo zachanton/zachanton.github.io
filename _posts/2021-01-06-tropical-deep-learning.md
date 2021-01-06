@@ -67,19 +67,16 @@ $$
 c_1 \boldsymbol{x}^{\alpha_1} \oplus\dots\oplus c_n \boldsymbol{x}^{\alpha_n} = max(c_1+\langle \alpha_1,\boldsymbol{x} \rangle,\dots,c_n+\langle \alpha_n,\boldsymbol{x} \rangle)
 $$
 
-with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_1,\dots,\alpha_d) \in\Z^d \\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
+with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_1,\dots,\alpha_d) \in Z^d \\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
         
         
 ### Tropical Rational Map
 
-A tropical quotient of two tropical polynomials $f(\\x) \\oslash g(\\x)$
+A tropical quotient of two tropical polynomials \\(f(\\boldsymbol{x}) \\oslash g(\\boldsymbol{x})\\)
 is a tropical rational function.
 
-A map
-$F:\\R^d\\to\\R^p:\\boldsymbol{x}\\mapsto(f\_1(\\boldsymbol{x}),\\dots,f\_p(\\boldsymbol{x}))$
-is a *tropical polynomial map* if each $f\_i(\\x)$ can be represented by
-a tropical polynomial and a *tropical rational map* if each $f\_i(\\x)$
-can be represented by a tropical rational function.
+A map \\(F:\R^d\to\R^p:\boldsymbol{x}\mapsto(f_1(\boldsymbol{x}),\dots,f_p(\boldsymbol{x}))\\) is a *tropical polynomial map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical polynomial and a *tropical rational map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical rational function.
+
 
 ###Equivalence of tropical polynomials
  There are two levels of equivalence
