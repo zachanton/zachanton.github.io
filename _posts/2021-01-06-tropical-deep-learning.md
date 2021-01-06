@@ -34,7 +34,7 @@ trained for a binary classification problem.
 
 ### Tropical Semiring
 
-On the set \\(\mathbb{R} = R\cup\{-\infty \}\\) we define two commutative binary
+On the set \\(\mathbb{R} = R\cup\lbrace-\infty\rbrace\\) we define two commutative binary
 operations \\(\oplus\\) and \\(\odot\\) as follows: for \\(a, b\in R\\) and
 \\(c\in \mathbb{R}\\)
 
@@ -53,7 +53,6 @@ Also we define *tropical quotient* of \\(x\\) and \\(y\\) as
 \\(x \oslash y = x-y\\) and *tropical power* as
 \\(x^{\odot a} = a \cdot x\\) for \\(a\in \mathbb{R}\\)
 
-### NEW2
 ### Tropical Polynomial
 
 Let *x*<sub>1</sub>, …, *x*<sub>*d*</sub> be variables representing
