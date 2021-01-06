@@ -34,7 +34,7 @@ trained for a binary classification problem.
 
 ### Tropical Semiring
 
-On the set $\{\R\cup\{-\infty \}$ we define two commutative binary
+On the set <img src="https://render.githubusercontent.com/render/math?math=\{\R\cup\{-\infty \}"> we define two commutative binary
 operations $\oplus$ and $\odot$ as follows: for $a, b\in R$ and
 $c\in \R$, $$a\oplus b = max(a, b), a\odot b = a + b$$
 $$c\oplus -\infty = c, c\odot -\infty = -\infty$$ The triplet
