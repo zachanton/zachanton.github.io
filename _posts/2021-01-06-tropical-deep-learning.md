@@ -69,7 +69,7 @@ $$
 
 with \\(c_i\in\mathbb{T}\\) and \\(\boldsymbol{\alpha}_i = (\alpha_1,\dots,\alpha_d) \in Z^d \\) and a monomial of a given multiindex appears at most once in the sum, i.e., \\({\alpha}_i\neq{\alpha}_j\\) for any \\(i \neq j\\).
         
-        
+       
 ### Tropical Rational Map
 
 A tropical quotient of two tropical polynomials \\(f(\\boldsymbol{x}) \\oslash g(\\boldsymbol{x})\\)
@@ -77,16 +77,15 @@ is a tropical rational function.
 
 A map \\(F:\mathbb{R}^d\to\mathbb{R}^p:\boldsymbol{x}\mapsto(f_1(\boldsymbol{x}),\dots,f_p(\boldsymbol{x}))\\) is a *tropical polynomial map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical polynomial and a *tropical rational map* if each \\(f_i(\boldsymbol{x})\\) can be represented by a tropical rational function.
 
-
-###Equivalence of tropical polynomials
+### Equivalence of tropical polynomials
 
 There are two levels of equivalence
 between tropical polynomials
 
-- \item \\(f =_1 g\\): \\(f\\) and \\(g\\) have the same terms and coefficients;
-- \item \\(f =_2 g\\): \\(f(x) = g(x)\\) for all \\(x \in R\\)
+- \\(f =_1 g\\): \\(f\\) and \\(g\\) have the same terms and coefficients;
+- \\(f =_2 g\\): \\(f(x) = g(x)\\) for all \\(x \in R\\)
 
-The polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = max \left( x_1+x_2, 2 x_1, 2 x_2\right)\\) and \\(x_1^{2} \oplus x_2^{2}= max \left(2 x_1, 2 x_2\right)\\) are functionally equivalent, but not equal as polynomials.
+For example, the polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = max \left( x_1+x_2, 2 x_1, 2 x_2\right)\\) and \\(x_1^{2} \oplus x_2^{2}= max \left(2 x_1, 2 x_2\right)\\) are functionally equivalent, but not equal as polynomials. This follows from the fact that in the first polynomial monomial  \\(x_1 \odot x_2\\) is less than or equal to \\(x_1^{2}\\) for \\(x_2\leq x_1\\) and less than or equal to \\(x_2^{2}\\) for \\(x_1\leq x_2\\), which implies that its value at any point coincides with \\(x_1^{2} \oplus x_2^{2}\\).
 
 
 
