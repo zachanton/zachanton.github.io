@@ -2,7 +2,7 @@
 layout: post
 title: "Tropical Geometry of Deep Neural Networks"
 date: 2021-01-06
-description: "Training gradient boosted decision trees with a quantile loss to predict taxi fares, in python using catboost and vaex."
+description: "Looking at the relationship between tropical polynomials and neural networks."
 img_url: /assets/img/tropical-deep-learning/new-boundaries.png
 tags: [deep learning, tropical geometry,visualization]
 language: [python]
