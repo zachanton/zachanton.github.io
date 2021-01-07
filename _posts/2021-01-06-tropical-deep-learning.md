@@ -119,6 +119,19 @@ $$
     
 The faces of extended Newton polytope \\(\mathcal{P}(f)\\) that are visible from above with respect to the first coordinate form the upper convex hull and called \\(\text{UF}(\mathcal{P}(f))\\).
 
+### Dual Subdivision
+
+Letting \\(\pi:\mathbb{R}^{d+1}\to\mathbb{R}^d\\) be the projection which drops the first coordinate, the *dual subdivision* of \\(f\\) is then the projection of the upper faces of \\(\mathcal{P}(f)\\), i.e.
+
+$$
+ \delta(f) = \pi(\text{UF}(\mathcal{P}(f))). 
+$$
+
+The points of \\((1\odot x^2)\oplus(1\odot y^2)\oplus(2\odot 
+xy)\oplus (2\odot x)\oplus (2\odot y)\oplus 1\\), their convex hull, the induced subdivision of the triangle and the dual tropical curve:
+
+![png](/assets/img/tropical-deep-learning/conv_hull.png "source: arxiv.org/pdf/1908.07012.pdf")
+
 
 
 ## Conclusion
