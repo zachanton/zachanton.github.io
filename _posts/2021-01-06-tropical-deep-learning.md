@@ -160,7 +160,7 @@ $$
 \mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_i(x)=v_j(x) \text{ for some }i\neq j \}  
 $$
     
-Further everywhere we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\mathbb{Z}^{n_k\times n_{k-1}}\\)
+Further we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\mathbb{Z}^{n_k\times n_{k-1}}\\)
 
 This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
 
