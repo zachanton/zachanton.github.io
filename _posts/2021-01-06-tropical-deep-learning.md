@@ -90,6 +90,21 @@ For example, the polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = ma
 This follows from the fact that in the first polynomial monomial  \\(x_1 \odot x_2\\) is less than or equal to \\(x_1^{2}\\) for \\(x_2\leq x_1\\) and less than or equal to \\(x_2^{2}\\) for \\(x_1\leq x_2\\), which implies that its value at any point coincides with \\(x_1^{2} \oplus x_2^{2}\\).
 
 
+## Tropical Algebraic Geometry
+
+### Tropical Hypersurface
+
+Let \\(f(\boldsymbol{x})\\) be a tropical polynomial. A point \\(\boldsymbol{x}\in R^n\\) is a root of \\(f\\) if the maximum is attained at least twice in the evaluation of \\(f(\boldsymbol{x})\\).
+
+    
+Let \\(f\\) be a tropical polynomial. The tropical hypersurface \\(\mathcal{T}(f)\\) is the set of all roots of \\(f\\).
+
+Suppose \\(f(x, y) = x\oplus y\oplus 0\\), then \\(\mathcal{T}(f)\\) is on the figure.
+
+![png](/assets/img/tropical-deep-learning/two-boundaries.png)
+    
+
+
 
 ## Conclusion
 
