@@ -127,7 +127,7 @@ $$
  \delta(f) = \pi(\text{UF}(\mathcal{P}(f))). 
 $$
 
-In the next picture you can see the points of \\((1\odot x^2)\oplus(1\odot y^2)\oplus(2\odot 
+Below you can see the points of \\((1\odot x^2)\oplus(1\odot y^2)\oplus(2\odot 
 xy)\oplus (2\odot x)\oplus (2\odot y)\oplus 1\\), their convex hull, the induced subdivision of the triangle and the dual tropical curve:
 
 ![png](/assets/img/tropical-deep-learning/conv_hull.png)
