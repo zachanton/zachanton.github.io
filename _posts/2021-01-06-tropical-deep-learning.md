@@ -135,7 +135,7 @@ xy)\oplus (2\odot x)\oplus (2\odot y)\oplus 1\\), their convex hull, the induced
 
 ## Neural Networks
 
-An *{\\(L\\)-layer feedforward neural network* is a map \\(v:\mathbb{R}^d\to\mathbb{R}^p\\)
+An *\\(L\\)-layer feedforward neural network* is a map \\(v:\mathbb{R}^d\to\mathbb{R}^p\\)
 
 $$
     v^{(L)} = \sigma^{(L)} \circ \rho^{(L)} \circ\dots\circ \sigma^{(1)} \circ \rho^{(1)} 
@@ -155,11 +155,12 @@ where \\(t \in \mathbb{R}\\) is called a threshold vector and max is taken coord
 ### Decision Boundary
 
 The *decision boundary* of a neural network with output \\(v = (v_1,\dots,v_p)\\) is the set of inputs that give (at least) two nodes with equal output i.e. 
+
 $$
 \mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_i(x)=v_j(x) \text{ for some }i\neq j \}  
 $$
     
-Further everywhere we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\Z^{n_k\times n_{k-1}}\\)
+Further everywhere we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\mathbb{Z}^{n_k\times n_{k-1}}\\)
 
 This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
 
