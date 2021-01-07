@@ -101,7 +101,7 @@ Let \\(f\\) be a tropical polynomial. The tropical hypersurface \\(\mathcal{T}(f
 
 Suppose \\(f(x, y) = x\oplus y\oplus 0\\), then \\(\mathcal{T}(f)\\) is on the figure.
 
-![png](/assets/img/tropical-deep-learning/two-boundaries.png)
+![png](/assets/img/tropical-deep-learning/simple_curve.png)
     
 
 
