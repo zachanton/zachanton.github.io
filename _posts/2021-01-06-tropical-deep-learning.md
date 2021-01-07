@@ -12,8 +12,6 @@ comments: true
 [Zhang et al.](https://arxiv.org/pdf/1805.07091.pdf) showed a close relationship between tropical polynomials and family of functions represented by feedforward neural networks with rectified linear units (ReLU) and integer weights. 
 	
 This connection helps to study both theoretical capabilities of neural networks, such as their expressiveness, and the methods of their  [pruning and initialization](https://arxiv.org/pdf/2002.08838.pdf). 
-    
-An important point is the close geometric connection between tropical hypersurfaces and the decision boundaries of neural networks.
 
 In this post we will take a closer look at the relationship between tropical polynomials and neural networks. An important point is the close geometric connection between tropical hypersurfaces and the decision boundaries of neural networks. We make use of the [code](https://github.com/zachanton/tropical) accompanying my [master's thesis](https://github.com/zachanton/tropical/blob/master/master_thesis.pdf), in order to visualize the decision boundary of a two-layer fully connected ReLU network,
 trained for a binary classification problem.
@@ -30,7 +28,7 @@ trained for a binary classification problem.
 - [Conclusion](#conclusion)
 
 
-## Tropical Arithmetic and Tropical Linear Algebra
+## Tropical Arithmetic and Tropical Linear Algebra  <a name="TropicalArithmeticandTropicalLinearAlgebra"></a>
 
 ### Tropical Semiring
 
@@ -90,7 +88,7 @@ For example, the polynomials \\(x_1 \odot x_2 \oplus x_1^{2} \oplus x_2^{2} = ma
 This follows from the fact that in the first polynomial monomial  \\(x_1 \odot x_2\\) is less than or equal to \\(x_1^{2}\\) for \\(x_2\leq x_1\\) and less than or equal to \\(x_2^{2}\\) for \\(x_1\leq x_2\\), which implies that its value at any point coincides with \\(x_1^{2} \oplus x_2^{2}\\).
 
 
-## Tropical Algebraic Geometry
+## Tropical Algebraic Geometry <a name="TropicalAlgebraicGeometry"></a>
 
 ### Tropical Hypersurface
 
@@ -133,7 +131,8 @@ xy)\oplus (2\odot x)\oplus (2\odot y)\oplus 1\\), their convex hull, the induced
 ![png](/assets/img/tropical-deep-learning/conv_hull.png)
 *source: arxiv.org/pdf/1908.07012.pdf*
 
-## Neural Networks
+## Neural Networks <a name="NeuralNetworks"></a>
+
 
 An *\\(L\\)-layer feedforward neural network* is a map \\(v:\mathbb{R}^d\to\mathbb{R}^p\\)
 
@@ -165,6 +164,6 @@ Further we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\i
 This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
 
 
-## Conclusion
+## Conclusion <a name="conclusion"></a>
 
 Quantile regressions are a great way to estimate uncertainty, but make sure your target variable is normally distributed and normalized!
