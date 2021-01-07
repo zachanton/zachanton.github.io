@@ -105,16 +105,16 @@ Suppose \\(f(x, y) = x\oplus y\oplus 0\\), then \\(\mathcal{T}(f)\\) is on the f
     
 ### Newton Polytope
 
-For a tropical polynomial \\(f(x) = c_1 x^{\alpha_1} \oplus\dots\oplus c_n x^{\alpha_n}\\), we define the *Newton polytope* of \\(f\\) as the convex hull of \\(\alpha_1,\dots,\alpha_n\\) in \\(\R^d\\)
+For a tropical polynomial \\(f(x) = c_1 x^{\alpha_1} \oplus\dots\oplus c_n x^{\alpha_n}\\), we define the *Newton polytope* of \\(f\\) as the convex hull of \\(\alpha_1,\dots,\alpha_n\\) in \\(\mathbb{R}^d\\)
 
 $$
- \Delta(f) \coloneqq \text{Conv}\{ \alpha_i : c_i \neq -\infty , i=1...n\}. 
+ \Delta(f) = \text{Conv}\{ \alpha_i : c_i \neq -\infty , i=1...n\}. 
 $$
 
 and the *extended Newton polytope* of \\(f\\) as
         
 $$
-\mathcal{P}(f)\coloneqq \text{Conv}\{ (c_i,\alpha_i)\in\R^{d+1}:\alpha_i\neq-\infty \}
+\mathcal{P}(f) = \text{Conv}\{ (c_i,\alpha_i)\in\mathbb{R}^{d+1}:\alpha_i\neq-\infty \}
 $$
     
 The faces of extended Newton polytope \\(\mathcal{P}(f)\\) that are visible from above with respect to the first coordinate form the upper convex hull and called \\(\text{UF}(\mathcal{P}(f))\\).
