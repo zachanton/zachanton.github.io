@@ -181,28 +181,9 @@ From the proof of this statement, we can extract an algorithm for converting a n
 
 ### Neural Network to Tropical Rational Function
 
-# Algorithm 1
-Just a sample algorithmn
-\begin{algorithm}[H]
-\DontPrintSemicolon
-\SetAlgoLined
-\KwResult{Write here the result}
-\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
-\Input{Write here the input}
-\Output{Write here the output}
-\BlankLine
-\While{While condition}{
-    instructions\;
-    \eIf{condition}{
-        instructions1\;
-        instructions2\;
-    }{
-        instructions3\;
-    }
-}
-\caption{While loop with If/Else condition}
-\end{algorithm} 
+In this section we will define inductive procedure of conversion ReLU-network into quotient of two tropical polynomials. After that we transform this procedure into an algorithm and provide details of implementation.
 
+Every matrix \\(A\\) can be decomposed as a difference of two non-negative integer-valued matrices \\(A = A_+ - A_-\\) by taking \\(a^+_{ij} = \text{max}\{a_{ij},0\}\\) and \\(a^-_{ij} = \text{max}\{-a_{ij},0\}\\). 
 
 
 
