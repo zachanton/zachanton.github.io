@@ -223,10 +223,10 @@ $$
            \boldsymbol{\alpha}_{n}
          \end{bmatrix}
       = \begin{bmatrix}
-           \alpha_{1}^{1} & \hdots & \alpha_{1}^{n} \\
-           \alpha_{2}^{1} & \hdots & \alpha_{2}^{n} \\
+           \alpha_{1}^{1} & ... & \alpha_{1}^{n} \\
+           \alpha_{2}^{1} & ... & \alpha_{2}^{n} \\
            \vdots & \ddots & \vdots \\
-           \alpha_{n}^{1} & \hdots & \alpha_{n}^{n}
+           \alpha_{n}^{1} & ... & \alpha_{n}^{n}
          \end{bmatrix}
     \end{split}
 \end{align}
