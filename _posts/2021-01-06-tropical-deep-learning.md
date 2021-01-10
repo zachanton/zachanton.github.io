@@ -244,31 +244,6 @@ Maximum of two numbers \\(y_1\\) and \\(y_2\\) can be found by performing the fo
 where 
 
 $$
-W_1 = \begin{bmatrix}
-           1 & -1 \\
-           0 &  1 \\
-           0 & -1
-         \end{bmatrix}
-$$
-
-$$
-W_2 = \begin{bmatrix}
-           1 \\
-           1 \\
-           -1
-         \end{bmatrix}
-$$
-
-$$
-y = \begin{bmatrix}
-           y_1 \\
-           y_2
-         \end{bmatrix}
-$$
-
-
-
-$$
 \begin{align}
     \begin{split}
     W_1 &= \begin{bmatrix}
@@ -293,9 +268,9 @@ $$
 \end{align}
 $$
 
-We can generalize this method to find the maximum of n-element vector \\(y\\).
+Generalization of this method allows finding the maximum of n-element vector \\(y\\). We can match each matrix multiplication with a linear layer and non-linear maximum with ReLU and construct corresponding neural network.
 
-
+![png](/assets/img/tropical-deep-learning/algo2.png)
 
 ## Conclusion <a name="conclusion"></a>
 
