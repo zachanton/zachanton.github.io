@@ -150,6 +150,10 @@ $$
 
 where \\(t \in \mathbb{R}\\) is called a threshold vector and max is taken coordinate-wise. Networks from this class are piecewise-linear functions.
 
+Further we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\mathbb{Z}^{n_k\times n_{k-1}}\\)
+
+This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
+
 
 ### Decision Boundary
 
@@ -158,10 +162,27 @@ The *decision boundary* of a neural network with output \\(v = (v_1,\dots,v_p)\\
 $$
 \mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_i(x)=v_j(x) \text{ for some }i\neq j \}  
 $$
-    
-Further we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\in\mathbb{Z}^{n_k\times n_{k-1}}\\)
 
-This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
+## Tropical Polynomials and Neural Networks <a name="TropicalPolynomialsandNeuralNetworks"></a>
+
+[Zhang et al.](https://arxiv.org/pdf/1805.07091.pdf) proved that ReLU neural networks and tropical rational functions are equivalent in the following sense:
+
+- Let \\(v:\mathbb{R}^d\to\mathbb{R}^p\\).Then \\(v\\) can be defined by a tropical rational function if and only if \\(v\\) is a feedforward neural network under previous assumptions.
+- A tropical rational function \\(F\oslash G\\) can be represented as an L-layer network with
+
+$$
+        \[L \leq\ \max{ 1 + [\log_2(r_F)], 1 + [\log_2(r_G)], [\log_2(d+1)] } + 1
+$$
+
+where \\(r_F\\) and \\(r_G\\) are the number of monomials in the tropical polynomials \\(F\\) and \\(G\\) respectively.
+
+From the proof of this statement, we can extract an algorithm for converting a neural network into a tropical rational function and vice versa. 
+
+
+
+
+
+
 
 
 ## Conclusion <a name="conclusion"></a>
