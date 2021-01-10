@@ -251,7 +251,14 @@ Maximum of two numbers \\(y_1\\) and \\(y_2\\) can be found by performing the fo
            1 \\
            -1
          \end{bmatrix}\\) will be equal to desired maximum
-
+4. \\(\left(\begin{array}{cc} 
+0.8944272 & 0.4472136\\
+-0.4472136 & -0.8944272
+\end{array}\right)
+\left(\begin{array}{cc} 
+10 & 0\\ 
+0 & 5
+\end{array}\right)\\)
 
 We can generalize this method to find the maximum of n-element vector \\(y\\).
 
