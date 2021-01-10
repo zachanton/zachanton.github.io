@@ -23,3 +23,5 @@ social:
 plugins:
   - jekyll-seo-tag
 highlighter: rouge
+header-includes:
+  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
