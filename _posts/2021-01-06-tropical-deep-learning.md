@@ -236,27 +236,6 @@ Given a point \\(x = (x_1,...,x_n)\\), we can calculate the vector of monomials 
 
 Maximum of two numbers \\(y_1\\) and \\(y_2\\) can be found by performing the following procedure
 
-$$
-\begin{enumerate}
-    \item Finding product z between matrix W_1=\begin{bmatrix}
-           1 & -1 \\
-           0 &  1 \\
-           0 & -1
-         \end{bmatrix}
-    and y=\begin{bmatrix}
-           y_1 \\
-           y_2
-         \end{bmatrix}
-    \item Finding z'= \max(z,0) coordinatewise
-    \item Product m of z' and W_2=\begin{bmatrix}
-           1 \\
-           1 \\
-           -1
-         \end{bmatrix} will be equal to desired maximum
-\end{enumerate}
-$$
-
-
 - Finding product z between matrix \\(W_1=\begin{bmatrix}
            1 & -1 \\
            0 &  1 \\
@@ -272,6 +251,12 @@ $$
            1 \\
            -1
          \end{bmatrix}\\) will be equal to desired maximum
+- \\(c = \begin{bmatrix}
+           c_1 \\
+           c_2 \\
+           \vdots \\
+           c_n
+         \end{bmatrix}\\)
 
 
 We can generalize this method to find the maximum of n-element vector \\(y\\).
