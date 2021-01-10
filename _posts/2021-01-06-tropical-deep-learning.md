@@ -7,8 +7,6 @@ img_url: /assets/img/tropical-deep-learning/new-boundaries.png
 tags: [deep learning, tropical geometry,visualization]
 language: [python]
 comments: true
-header-includes:
-  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
 ---
 
 [Zhang et al.](https://arxiv.org/pdf/1805.07091.pdf) showed a close relationship between tropical polynomials and family of functions represented by feedforward neural networks with rectified linear units (ReLU) and integer weights. 
@@ -181,7 +179,7 @@ where \\(r_F\\) and \\(r_G\\) are the number of monomials in the tropical polyno
 From the proof of this statement, we can extract an algorithm for converting a neural network into a tropical rational function and vice versa. 
 
 
-### Network to Tropical Rational Function
+### Neural Network to Tropical Rational Function
 
 # Algorithm 1
 Just a sample algorithmn
