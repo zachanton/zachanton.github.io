@@ -183,7 +183,7 @@ From the proof of this statement, we can extract an algorithm for converting a n
 
 In this section we will define inductive procedure of conversion ReLU-network into quotient of two tropical polynomials. After that we transform this procedure into an algorithm and provide details of implementation.
 
-Every matrix \\(A\\) can be decomposed as a difference of two non-negative integer-valued matrices \\(A = A_+ - A_-\\) by taking \\(a^{+}_{ij} = \text{max}\lbrace a_{ij},0\rbrace\\) and \\(a^{-}_{ij} = \text{max}\lbrace-a_{ij},0\rbrace\\). 
+Every matrix \\(A\\) can be decomposed as a difference of two non-negative integer-valued matrices \\(A = A_+ - A_− \\) by taking \\(a^{+}_ij = \text{max}\lbrace a_ij,0\rbrace\\) and \\(a^{-}_ij = \text{max}\lbrace-a_ij,0\rbrace\\). 
 
 
 
