@@ -171,7 +171,7 @@ $$
 - A tropical rational function \\(F\oslash G\\) can be represented as an L-layer network with
 
 $$
-        \[L \leq\ \max{ 1 + [\log_2(r_F)], 1 + [\log_2(r_G)], [\log_2(d+1)] } + 1
+        L \leq\ \max{ 1 + [\log_2(r_F)], 1 + [\log_2(r_G)], [\log_2(d+1)] } + 1
 $$
 
 where \\(r_F\\) and \\(r_G\\) are the number of monomials in the tropical polynomials \\(F\\) and \\(G\\) respectively.
