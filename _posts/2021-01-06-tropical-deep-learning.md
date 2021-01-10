@@ -167,7 +167,7 @@ $$
 
 [Zhang et al.](https://arxiv.org/pdf/1805.07091.pdf) proved that ReLU neural networks and tropical rational functions are equivalent in the following sense:
 
-- Let \\(v:\mathbb{R}^d\to\mathbb{R}^p\\).Then \\(v\\) can be defined by a tropical rational function if and only if \\(v\\) is a feedforward neural network under previous assumptions.
+- Let \\(v:\mathbb{R}^d\to\mathbb{R}^p\\).Then \\(v\\) can be defined by a tropical rational function if and only if \\(v\\) is a feedforward neural network under previous restrictions.
 - A tropical rational function \\(F\oslash G\\) can be represented as an L-layer network with
 
 $$
@@ -179,7 +179,33 @@ where \\(r_F\\) and \\(r_G\\) are the number of monomials in the tropical polyno
 From the proof of this statement, we can extract an algorithm for converting a neural network into a tropical rational function and vice versa. 
 
 
+### Network to Tropical Rational Function
 
+---
+header-includes:
+  - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+---
+# Algorithm 1
+Just a sample algorithmn
+\begin{algorithm}[H]
+\DontPrintSemicolon
+\SetAlgoLined
+\KwResult{Write here the result}
+\SetKwInOut{Input}{Input}\SetKwInOut{Output}{Output}
+\Input{Write here the input}
+\Output{Write here the output}
+\BlankLine
+\While{While condition}{
+    instructions\;
+    \eIf{condition}{
+        instructions1\;
+        instructions2\;
+    }{
+        instructions3\;
+    }
+}
+\caption{While loop with If/Else condition}
+\end{algorithm} 
 
 
 
