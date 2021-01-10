@@ -232,9 +232,30 @@ $$
 \end{align}
 $$
 
-Given a point \\(x = (x_1,\hdots,x_n)\\), we can calculate the vector of monomials values as \\(y = Ax+c\\). Maximum of the coordinates of this vector is equal to the value of the polynomial \\(f\\) at the point \\(x\\).
+Given a point \\(x = (x_1,...,x_n)\\), we can calculate the vector of monomials values as \\(y = Ax+c\\). Maximum of the coordinates of this vector is equal to the value of the polynomial \\(f\\) at the point \\(x\\).
 
 Maximum of two numbers \\(y_1\\) and \\(y_2\\) can be found by performing the following procedure
+
+$$
+\begin{enumerate}
+    \item Finding product z between matrix W_1=\begin{bmatrix}
+           1 & -1 \\
+           0 &  1 \\
+           0 & -1
+         \end{bmatrix}
+    and y=\begin{bmatrix}
+           y_1 \\
+           y_2
+         \end{bmatrix}
+    \item Finding z'= \max(z,0) coordinatewise
+    \item Product m of z' and W_2=\begin{bmatrix}
+           1 \\
+           1 \\
+           -1
+         \end{bmatrix} will be equal to desired maximum
+\end{enumerate}
+$$
+
 
 - Finding product z between matrix \\(W_1=\begin{bmatrix}
            1 & -1 \\
