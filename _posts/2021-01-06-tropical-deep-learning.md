@@ -249,19 +249,21 @@ W_1 &= \begin{bmatrix}
            0 &  1 \\
            0 & -1
          \end{bmatrix}
+$$
 
-
+$$
 W_2 &= \begin{bmatrix}
            1 \\
            1 \\
            -1
          \end{bmatrix}
+$$
 
+$$
 y &=\begin{bmatrix}
            y_1 \\
            y_2
          \end{bmatrix}
-
 $$
 
 
