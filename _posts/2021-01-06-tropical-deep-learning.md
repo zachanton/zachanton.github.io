@@ -181,10 +181,56 @@ From the proof of this statement, we can extract an algorithm for converting a n
 
 ### Neural Network to Tropical Rational Function
 
-In this section we will define inductive procedure of conversion ReLU-network into quotient of two tropical polynomials. After that we transform this procedure into an algorithm and provide details of implementation.
+In this section we will define inductive procedure of conversion ReLU-network into quotient of two tropical polynomials. After that we transform this procedure into an algorithm.
 
-Every matrix \\(A\\) can be decomposed as a difference of two non-negative integer-valued matrices \\(A = A_+ - A_− \\) by taking \\(a^+_ĳ = \text{max}\lbrace a_ĳ,0\rbrace\\) and \\(a^-_ĳ = \text{max}\lbrace-a_ĳ,0\rbrace\\). 
+Let's start with the following proposition:
 
+Suppose \\(v(x) = F(x) \oslash G(x)\\) is a tropical rational map, \\(\rho(x) = A x + b\\) is a preactivation function with integer-valued matrix \\(A\\), and \\(\sigma(x)\\) is a ReLU activation function. Then there exist tropical polynomials \\(F'(x)\\) and \\(G'(x)\\) that \\(\sigma\circ \rho \circ v(x) = F'(x)\oslash G'(x)\\).
+
+The proof can be found [here](https://github.com/zachanton/tropical/blob/master/master_thesis.pdf). This procedure can be transformed into an algorithm:
+
+![png](/assets/img/tropical-deep-learning/algo1.png)
+
+
+### Tropical Polynomial to Neural Network
+
+In order to evaluate tropical polynomial at a point, we can, for example, find the value of each of the monomials, and then determine the maximum of the obtained values. These steps can be represented as a neural network: we will first construct a single layer computing the monomials, and then \\(\log_2(n)$\\)layers computing their maximum.
+Below we describe this construction in more details.
+
+Given a tropical polynomial 
+
+$$
+f(x) =  c_1 x^{\alpha_1} \oplus\dots\oplus c_n x^{\alpha_n}
+$$
+
+we can define 
+
+$$
+\begin{align}
+    \begin{split}
+    c &= \begin{bmatrix}
+           c_{1} \\
+           c_{2} \\
+           \vdots \\
+           c_{n}
+         \end{bmatrix}
+    \end{split}
+    \begin{split}
+    A &= \begin{bmatrix}
+           \boldsymbol{\alpha}_{1} \\
+           \boldsymbol{\alpha}_{2} \\
+           \vdots \\
+           \boldsymbol{\alpha}_{n}
+         \end{bmatrix}
+      = \begin{bmatrix}
+           \alpha_{1}^{1} & \hdots & \alpha_{1}^{n} \\
+           \alpha_{2}^{1} & \hdots & \alpha_{2}^{n} \\
+           \vdots & \ddots & \vdots \\
+           \alpha_{n}^{1} & \hdots & \alpha_{n}^{n}
+         \end{bmatrix}
+    \end{split}
+\end{align}
+$$
 
 
 ## Conclusion <a name="conclusion"></a>
