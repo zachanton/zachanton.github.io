@@ -155,14 +155,6 @@ Further we will restrict ourselves to integer weight matrices, i.e. \\(W^{(k)}\i
 This restriction is not very strict because one can always use approximation to rational numbers and clear denominators to obtain integer weights. 
 
 
-### Decision Boundary
-
-The *decision boundary* of a neural network with output \\(v = (v_1,\dots,v_p)\\) is the set of inputs that give (at least) two nodes with equal output i.e. 
-
-$$
-\mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_i(x)=v_j(x) \text{ for some }i\neq j \}  
-$$
-
 ## Tropical Polynomials and Neural Networks <a name="TropicalPolynomialsandNeuralNetworks"></a>
 
 [Zhang et al.](https://arxiv.org/pdf/1805.07091.pdf) proved that ReLU neural networks and tropical rational functions are equivalent in the following sense:
@@ -271,6 +263,49 @@ $$
 Generalization of this method allows finding the maximum of n-element vector \\(y\\). We can match each matrix multiplication with a linear layer and non-linear maximum with ReLU and construct corresponding neural network.
 
 ![png](/assets/img/tropical-deep-learning/algo2.png)
+
+
+## Decision Boundaries and Tropical Geometry <a name="DecisionBoundariesandTropicalGeometry"></a>
+
+### Decision Boundary
+
+The *decision boundary* of a neural network with output \\(v = (v_1,\dots,v_p)\\) is the set of inputs that give (at least) two nodes with equal output i.e. 
+
+$$
+\mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_i(x)=v_j(x) \text{ for some }i\neq j \}  
+$$
+
+### Decision Boundary from tropical perspective
+
+For neural network
+
+$$
+v(x)= \begin{bmatrix}
+                    v_{1}(x) \\
+                    v_{2}(x) 
+                \end{bmatrix}=
+                \begin{bmatrix}
+                    F_1(x)\oslash G_1(x) \\ 
+                    F_2(x)\oslash G_2(x)
+                \end{bmatrix}
+$$
+
+                
+the decision boundary of \\(v\\) is contained in some tropical hypersurface determined by \\(v\\). Specifically
+
+$$
+\mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_1(x)=v_2(x) \} \subseteq \mathcal{T}(R), 
+$$
+
+where \\(R(x)=F_1(x)\odot G_2(x)\oplus F_2(x)\odot G_1(x)\\).
+
+
+In the [paper](https://arxiv.org/pdf/2002.08838.pdf), the authors state this proposition and discusses the decision  boundary  of  a  simple  neural  network  with Linear-ReLU-Linear architecture, which also satisfy our restrictions. The main results obtained in the paper are based on an analysis not of the decision  boundary itself, but of its superset \\(\mathcal{T}(R(x))\\). 
+
+Below, using our *tropical* framework, we obtain an analytical expression directly for the decision boundary and demonstrate that it coincides with the estimated numerically. In addition, unlike [Alfarra](https://arxiv.org/pdf/2002.08838.pdf), the network of our interest can consist of an arbitrary number of hidden layers.
+
+
+
 
 ## Conclusion <a name="conclusion"></a>
 
