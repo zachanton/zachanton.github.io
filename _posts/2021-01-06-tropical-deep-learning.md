@@ -354,7 +354,6 @@ Next, we can construct auxiliary polynomials:
 
 
 $$
-\usepackage{amsmath}
 \begin{flalign*}
             H_1(x)\odot G_2(x) &= 48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus 4.0 \odot a^{66} \odot b^{132} \oplus 144.0 \odot a^{836} \odot b^{762}\\
             H_2(x)\odot G_1(x) &= -706 \odot a^{1006} \odot b^{602} \oplus -1 \odot a^{66} \odot b^{132} \oplus -212 \odot a^{1082} \odot b^{1134} \oplus 493 \odot a^{142} \odot b^{664}

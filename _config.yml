@@ -25,3 +25,4 @@ plugins:
 highlighter: rouge
 header-includes:
   - \usepackage[ruled,vlined,linesnumbered]{algorithm2e}
+  - \userpackage{amsmath}
