@@ -359,7 +359,7 @@ Let's visualize decision boundary of a trained neural network. To do this, calcu
 
 ![](/assets/img/tropical-deep-learning/real_boundary2.png) | ![](/assets/img/tropical-deep-learning/real_bound_with_curves.png)
 :---: | :---:
-Real decision boundary of trained network | Real decision boundary and tropical curves
+*Real decision boundary of trained network* | *Real decision boundary and tropical curves*
 
 
 Left figure shows that the part of the \\(R\\) tropical curve, that does not coincide with the \\(H_1(x)\odot G_2(x)\\) and  \\( H_2(x)\odot G_1(x)\\) curves, exactly matches with the empirical decision boundary. Our framework also provides an analytical representation of this boundary as union of rays and segments.
