@@ -332,7 +332,10 @@ $$
 $$
 
 
-![alt-text-1](/assets/img/tropical-deep-learning/5_h0_and_g0.png "Dual subdivision of \\(H_1\\) and \\(G_1\\)") ![alt-text-2](/assets/img/tropical-deep-learning/5_h1_and_g1.png "Dual subdivision of \\(H_2\\) and \\(G_2\\)")
+![](/assets/img/tropical-deep-learning/5_h0_and_g0.png) | ![](/assets/img/tropical-deep-learning/5_h1_and_g1.png)
+--- | ---
+Dual subdivision of \\(H_1\\) and \\(G_1\\) | Dual subdivision of \\(H_2\\) and \\(G_2\\)
+
 
 The left figure shows the dual subdivisions
 for the tropical polynomial \\(H_1\\) and \\(G_1\\) and the right for the tropical polynomial \\(H_2\\) and \\(G_2\\). It's interesting that \\(H_1\\) looks very similar to \\(G_2\\) and \\(G_1\\) to \\(H_2\\) and this similarity will remain in case of more complex polynomials.
