@@ -355,6 +355,18 @@ Left figure shows the dual subdivisions for the tropical polynomials \\(H_1(x)\o
 
 In both pictures, part of the \\(R\\) curve coincides with its components curves; however, we are primarily interested in its non-coincident blue part.
 
+Let's visualize decision boundary of a trained neural network. To do this, calculate its predictions at each point of \\([-5,5]^2\\) square with 0.0005 step.
+
+![](/assets/img/tropical-deep-learning/real_boundary2.png) | ![](/assets/img/tropical-deep-learning/real_bound_with_curves.png)
+:---: | :---:
+Real decision boundary of trained network | Real decision boundary and tropical curves
+
+
+Left figure shows that the part of the \\(R\\) tropical curve, that does not coincide with the \\(H_1(x)\odot G_2(x)\\) and  \\( H_2(x)\odot G_1(x)\\) curves, exactly matches with the empirical decision boundary. Our framework also provides an analytical representation of this boundary as union of rays and segments.
+
+
+It is important to note that we can get similar boundaries for any neural network under our restrictions, regardless of the number of layers and input features. However, in case of multiclass classification, the approach needs to be slightly changed by comparing classes in pairs.
+
 ## Conclusion <a name="conclusion"></a>
 
 Quantile regressions are a great way to estimate uncertainty, but make sure your target variable is normally distributed and normalized!
