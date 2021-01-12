@@ -343,33 +343,8 @@ for the tropical polynomial \\(H_1\\) and \\(G_1\\) and right shows subdivisions
 
 Next, we can construct auxiliary polynomials:
 
+![png](/assets/img/tropical-deep-learning/polynoms.png)
 
-\\(H_1(x)\odot G_2(x) = 48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus 4.0 \odot a^{66} \odot b^{132} \oplus 144.0 \odot a^{836} \odot b^{762}\\)
-
-\\(H_2(x)\odot G_1(x) = -706 \odot a^{1006} \odot b^{602} \oplus -1 \odot a^{66} \odot b^{132} \oplus -212 \odot a^{1082} \odot b^{1134} \oplus 493 \odot a^{142} \odot b^{664}\\)
-
-\\(R(x) = H_1(x)\odot G_2(x)\oplus F_2(x)\odot G_1(x) = 48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus -706.0 \odot a^{1006} \odot b^{602} \oplus
-    144.0 \odot a^{836} \odot b^{762} \oplus -212.0 \odot a^{1082} \odot b^{1134} \oplus
-     493.0 \odot a^{142} \odot b^{664}\\)
-     
-$$
-\begin{align*}
-& a_{ijk} = 2 \\
-&(because ||V_1-V_2|| = \max_{i \in [d]}|V^i_1 - V^i_2|)
-\end{align*}
-$$
-
-$$
-\begin{flalign*}
-            H_1(x)\odot G_2(x) &= 48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus 4.0 \odot a^{66} \odot b^{132} \oplus 144.0 \odot a^{836} \odot b^{762}\\
-            H_2(x)\odot G_1(x) &= -706 \odot a^{1006} \odot b^{602} \oplus -1 \odot a^{66} \odot b^{132} \oplus -212 \odot a^{1082} \odot b^{1134} \oplus 493 \odot a^{142} \odot b^{664}
-\end{flalign*}
-\begin{flalign*}
-    R(x) = H_1(x)\odot G_2(x)\oplus F_2(x)\odot G_1(x) = &48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus -706.0 \odot a^{1006} \odot b^{602} \oplus\\
-    & 144.0 \odot a^{836} \odot b^{762} \oplus -212.0 \odot a^{1082} \odot b^{1134} \oplus\\
-    & 493.0 \odot a^{142} \odot b^{664}
-\end{flalign*}
-$$
 
 
 ![](/assets/img/tropical-deep-learning/5_R_h0g1_h1g0.png) | ![](/assets/img/tropical-deep-learning/Rmin_tropical_curve.png)
