@@ -353,11 +353,10 @@ Next, we can construct auxiliary polynomials:
      493.0 \odot a^{142} \odot b^{664}\\)
      
 $$
-\begin{eqnarray*}
-    x &=& blah blah blah \\ 
-      & & more blah blah blah \\
-      & & even more blah blah
-\end{eqnarray*}
+\begin{align*}
+& a_{ijk} = 2 \\
+&(because ||V_1-V_2|| = \max_{i \in [d]}|V^i_1 - V^i_2|)
+\end{align*}
 $$
 
 $$
