@@ -297,13 +297,45 @@ $$
 \mathcal{B}(v) = \{ x\in\mathbb{R}^d : v_1(x)=v_2(x) \} \subseteq \mathcal{T}(R), 
 $$
 
-where \\(R(x)=F_1(x)\odot G_2(x)\oplus F_2(x)\odot G_1(x)\\).
+where \\(R(x)=F_1(x)\odot G_2(x)\oplus F_2(x)\odot G_1(x)\\) and \\(\mathcal{T}(R)\\) this is the tropical curve defined above.
 
 
 In the [paper](https://arxiv.org/pdf/2002.08838.pdf), the authors state this proposition and discusses the decision  boundary  of  a  simple  neural  network  with Linear-ReLU-Linear architecture, which also satisfy our restrictions. The main results obtained in the paper are based on an analysis not of the decision  boundary itself, but of its superset \\(\mathcal{T}(R(x))\\). 
 
 Below, using our *tropical* framework, we obtain an analytical expression directly for the decision boundary and demonstrate that it coincides with the estimated numerically. In addition, unlike [Alfarra](https://arxiv.org/pdf/2002.08838.pdf), the network of our interest can consist of an arbitrary number of hidden layers.
 
+### Experiment
+
+Let's create a standard classification task from *sklearn*
+
+
+```python
+X, Y = make_classification(n_samples=1000, n_features=2,
+n_classes=2, n_redundant=0, random_state=5)
+```
+
+![png](/assets/img/tropical-deep-learning/5_class.png)
+
+and train a simple Linear-ReLU-Linear neural network with 4 neurons in hidden layer.
+
+After training, we can convert our neural network into a tropical rational function defined by 4 tropical polynomials \\(H_1(x), G_1(x), H_2(x), G_2(x)\\). We use the notation \\(H\\)instead \\(F\\) because the last layer of our network is not ReLU.
+
+In this experiment we get
+
+$$
+\begin{align*}
+    H_1(x) &= 20.0 \oplus 72.0 \odot x_1^{398} \odot x_2^{354} \oplus 88.0 \odot x_1^{374} \odot x_2^{306} \oplus 4.0 \odot x_1^{24} \odot x_2^{48}\\
+    G_1(x) &= 247.0 \odot x_1^{62} \odot x_2^{314} \oplus -128.0 \odot x_1^{562} \odot x_2^{564} \oplus x_1^{24} \odot x_2^{48} \oplus -375.0 \odot x_1^{524} \odot x_2^{298}\\
+    H_2(x) &= 246.0 \odot x_1^{80} \odot x_2^{350} \oplus -84.0 \odot x_1^{520} \odot x_2^{570} \oplus -331.0 \odot x_1^{482} \odot x_2^{304} \oplus -1.0 \odot x_1^{42} \odot x_2^{84}\\
+    G_1(x) &= 28.0 \oplus 100.0 \odot x_1^{396} \odot x_2^{324} \oplus x_1^{42} \odot x_2^{84} \oplus 72.0 \odot x_1^{438} \odot x_2^{408}
+\end{align*}
+$$
+
+
+![alt-text-1](/assets/img/tropical-deep-learning/5_h0_and_g0.png "Dual subdivision of \\(H_1\\) and \\(G_1\\)") ![alt-text-2](/assets/img/tropical-deep-learning/5_h1_and_g1.png "Dual subdivision of \\(H_2\\) and \\(G_2\\)")
+
+The left figure shows the dual subdivisions
+for the tropical polynomial \\(H_1\\) and \\(G_1\\) and the right for the tropical polynomial \\(H_2\\) and \\(G_2\\). It's interesting that \\(H_1\\) looks very similar to \\(G_2\\) and \\(G_1\\) to \\(H_2\\) and this similarity will remain in case of more complex polynomials.
 
 
 
