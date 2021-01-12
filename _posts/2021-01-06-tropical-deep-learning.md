@@ -341,7 +341,13 @@ Left figure shows the dual subdivisions
 for the tropical polynomial \\(H_1\\) and \\(G_1\\) and right shows subdivisions for the tropical polynomial \\(H_2\\) and \\(G_2\\). It's interesting that \\(H_1\\) looks very similar to \\(G_2\\) and \\(G_1\\) to \\(H_2\\) and this similarity will remain in case of more complex polynomials.
 
 
-Next, we can construct auxiliary polynomials
+Next, we can construct auxiliary polynomials:
+
+
+\\(H_1(x)\odot G_2(x) = 48.0 \oplus 188.0 \odot a^{770} \odot b^{630} \oplus 4.0 \odot a^{66} \odot b^{132} \oplus 144.0 \odot a^{836} \odot b^{762}\\)
+
+\\(H_2(x)\odot G_1(x) = -706 \odot a^{1006} \odot b^{602} \oplus -1 \odot a^{66} \odot b^{132} \oplus -212 \odot a^{1082} \odot b^{1134} \oplus 493 \odot a^{142} \odot b^{664}\\)
+
 
 $$
 \begin{flalign*}
@@ -356,25 +362,13 @@ $$
 $$
 
 
-\begin{figure}[!htb]
-\minipage{0.5\textwidth}
-  \includegraphics[width=7cm]{./Figures/5_R_h0g1_h1g0.png}
-  \caption{Dual subdivision of $R_{min}$ and its components}\label{fig:Rmin_sub}
-\endminipage\hfill
-\minipage{0.5\textwidth}
-  \includegraphics[width=7cm]{./Figures/Rmin_tropical_curve.png}
-  \caption{Tropical curves of $R_{min}$ and its components}\label{fig:Rmin_curve}
-\endminipage
-\end{figure}
-
 ![](/assets/img/tropical-deep-learning/5_R_h0g1_h1g0.png) | ![](/assets/img/tropical-deep-learning/Rmin_tropical_curve.png)
 :---: | :---:
-Dual subdivision of \\(R\\) and its components | Tropical curve of \\(R\\) and its components)
+Dual subdivision of \\(R\\) and its components | Tropical curve of \\(R\\) and its components
 
-Left figure \ref{fig:Rmin_sub} shows the dual subdivisions
-for the tropical polynomials \\(H_1(x)\odot G_2(x)\\), \\(H_2(x)\odot G_1(x)\\) and \\(R\\) and right figure shows their tropical curve.
+Left figure shows the dual subdivisions for the tropical polynomials \\(H_1(x)\odot G_2(x)\\), \\(H_2(x)\odot G_1(x)\\) and \\(R\\) and right figure shows their tropical curves.
 
-In both pictures, part of the \\(R\\)$ curve coincides with its components curves; however, we are primarily interested in its non-coincident blue part.
+In both pictures, part of the \\(R\\) curve coincides with its components curves; however, we are primarily interested in its non-coincident blue part.
 
 ## Conclusion <a name="conclusion"></a>
 
