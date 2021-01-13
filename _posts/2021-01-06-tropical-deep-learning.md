@@ -391,4 +391,15 @@ Below are visualizations similar to first experiment
 
 ## Conclusion <a name="conclusion"></a>
 
-Quantile regressions are a great way to estimate uncertainty, but make sure your target variable is normally distributed and normalized!
+Tropical geometry allows you to look at neural networks from an unusual point of view. 
+
+In this post, we have mentioned a few basic things from tropical mathematics and formulated conversion algorithms between certain family of ReLU neural networks and tropical rational functions and vice versa. 
+
+We also used the functionality provided by our [tropical](https://github.com/zachanton/tropical) framework, in order to visualize the decision boundary of a fully connected ReLU network, trained for a binary classification problem.
+
+The main directions for subsequent research are
+
+- improving the optimality of the conversion algorithms
+- their use for training, pruning and initialization of neural networks
+- study of the geometry of their decision boundaries
+- application of the proposed in the work approach for more complex, in particular convolutional, neural networks
