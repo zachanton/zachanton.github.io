@@ -306,6 +306,8 @@ Below, using our *tropical* framework, we obtain an analytical expression direct
 
 ### Experiment
 
+The code to reproduce this experiment can be found [here](https://github.com/zachanton/tropical/blob/master/2d_decision_polytope_real_classification.ipynb).
+
 Let's create a standard classification task from *sklearn*
 
 
@@ -334,7 +336,7 @@ $$
 
 ![](/assets/img/tropical-deep-learning/5_h0_and_g0.png) | ![](/assets/img/tropical-deep-learning/5_h1_and_g1.png)
 :---: | :---:
-Dual subdivision of \\(H_1\\) and \\(G_1\\) | Dual subdivision of \\(H_2\\) and \\(G_2\\)
+*Dual subdivision of \\(H_1\\) and \\(G_1\\)* | *Dual subdivision of \\(H_2\\) and \\(G_2\\)*
 
 
 Left figure shows the dual subdivisions
@@ -349,7 +351,7 @@ Next, we can construct auxiliary polynomials:
 
 ![](/assets/img/tropical-deep-learning/5_R_h0g1_h1g0.png) | ![](/assets/img/tropical-deep-learning/Rmin_tropical_curve.png)
 :---: | :---:
-Dual subdivision of \\(R\\) and its components | Tropical curve of \\(R\\) and its components
+*Dual subdivision of \\(R\\) and its components* | *Tropical curve of \\(R\\) and its components*
 
 Left figure shows the dual subdivisions for the tropical polynomials \\(H_1(x)\odot G_2(x)\\), \\(H_2(x)\odot G_1(x)\\) and \\(R\\) and right figure shows their tropical curves.
 
@@ -362,10 +364,30 @@ Let's visualize decision boundary of a trained neural network. To do this, calcu
 *Real decision boundary of trained network* | *Real decision boundary and tropical curves*
 
 
-Left figure shows that the part of the \\(R\\) tropical curve, that does not coincide with the \\(H_1(x)\odot G_2(x)\\) and  \\( H_2(x)\odot G_1(x)\\) curves, exactly matches with the empirical decision boundary. Our framework also provides an analytical representation of this boundary as union of rays and segments.
+Figures show that the part of the \\(R\\) tropical curve, that does not coincide with the \\(H_1(x)\odot G_2(x)\\) and  \\( H_2(x)\odot G_1(x)\\) curves, exactly matches with the empirical decision boundary. Our framework also provides an analytical representation of this boundary as union of rays and segments.
 
 
 It is important to note that we can get similar boundaries for any neural network under our restrictions, regardless of the number of layers and input features. However, in case of multiclass classification, the approach needs to be slightly changed by comparing classes in pairs.
+
+
+We have conducted a similar experiment with a more complex Linear-ReLU-Linear-ReLU-Linear neural network with 4 and 3 neurons in hidden layers.
+
+Below are visualizations similar to first experiment
+
+![](/assets/img/tropical-deep-learning/h0g0.png) | ![](/assets/img/tropical-deep-learning/h1g1.png)
+:---: | :---:
+*Dual subdivision of \\(H_1\\) and \\(G_1\\)* | *Dual subdivision of \\(H_2\\) and \\(G_2\\)*
+
+
+![](/assets/img/tropical-deep-learning/Rmin_sub.png) | ![](/assets/img/tropical-deep-learning/Rmin_curve.png)
+:---: | :---:
+*Dual subdivision of \\(R\\) and its components* | *Tropical curve of \\(R\\) and its components*
+
+
+![](/assets/img/tropical-deep-learning/boundary_points.png) | ![](/assets/img/tropical-deep-learning/boundary_curve.png)
+:---: | :---:
+*Real decision boundary of trained network* | *Real decision boundary and tropical curves*
+
 
 ## Conclusion <a name="conclusion"></a>
 
