@@ -1,7 +1,7 @@
 theme: jekyll-theme-minimal
 markdown: kramdown
 name: Anton Zakharenkov
-position: Machine Learning Engineer
+position: Data Scientist
 github_url: https://github.com/zachanton
 kaggle_url: https://www.kaggle.com/zachanton
 linkedin_url: https://www.linkedin.com/in/anton-zakharenkov/
@@ -9,7 +9,7 @@ email_url: mailto:anton.zaharenkov@phystech.edu
 resume_url: /assets/files/AntonZakharenkov_Resume.pdf
 company_name: Conundrum
 company_url: https://conundrum.ai
-place_name: Moscow, Russia
+place_name: Warsaw, Poland
 title: Anton Zakharenkov
 description: Blog
 url: https://zachanton.github.io/
